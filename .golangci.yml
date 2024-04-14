@@ -1,0 +1,28 @@
+linters:
+  enable:
+    - gomoddirectives
+    - gosec
+    - errcheck
+    - gosimple
+    - ineffassign
+    - staticcheck
+    - gocritic
+    - govet
+    - dupl
+    - goconst
+linters-settings:
+  gomoddirectives:
+    replace-allow-list: []
+  gosec:
+    includes: [] # all
+  dupl:
+    threshold: 100
+  goconst:
+    min-len: 2
+    min-occurrences: 3
+  gocritic:
+    enabled-tags:
+      - diagnostic
+      - performance
+      # - opinionated
+      # - style
